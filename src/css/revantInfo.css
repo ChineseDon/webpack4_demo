@@ -1,0 +1,331 @@
+body {
+    background-color: #fff
+}
+
+header.rv-header,
+header.rv-opratorInfo-header {
+    width: 100%;
+    height: 1.5733333333rem;
+    background: rgb(248, 248, 248)
+}
+
+.rv-header>p {
+    text-align: center;
+    box-sizing: content-box
+}
+
+.rv-opratorInfo-header>p {
+    padding-top: 0.55rem;
+    text-align: center;
+    font-family: PingFang-SC-Bold;
+    font-weight: 700;
+    font-size: 0.4rem;
+    color: rgb(44, 44, 44)
+}
+
+.rv-header>p:first-child {
+    height: 0.4rem;
+    padding-top: 0.26666666667rem;
+    font-family: PingFang-SC-Bold;
+    font-weight: 700;
+    font-size: 0.4rem;
+    color: rgb(44, 44, 44)
+}
+
+.rv-header>p:not(:first-child) {
+    height: 0.2933333333rem;
+    padding-top: 0.2266666667rem;
+    font-family: PingFang-SC-Medium;
+    font-size: 0.2933333333rem;
+    color: rgb(243, 39, 41)
+}
+
+.cell-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    height: 1.36rem;
+    font-size: 0
+}
+
+.cell-item .cell-input,
+.cell-item .cell-label {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.cell-item .cell-input {
+    height: 100%;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 0.3333333333rem
+}
+
+.cell-item .cell-label {
+    width: 2.5rem;
+    margin-top: 0.4rem;
+    margin-left: 0.32rem;
+    font-size: 0.3733333333rem
+}
+
+.cell-item .ownerPhone {
+    width: 5.1333333333rem
+}
+
+.cell-input input[type="tel"],
+.cell-input input[type="text"]:not(#stationType) {
+    touch-action: none;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 0.3466666667rem;
+    box-sizing: border-box
+}
+
+.cell-input input[type="tel"],
+.cell-input input[type="text"]:not(#sellStartTime):not(#sellEndTime) {
+    width: 100%;
+    touch-action: none;
+}
+
+.cell-label label {
+    display: inline-block;
+    width: 100%;
+    text-align: justify;
+    text-align-last: justify
+}
+
+.cell-label label:after {
+    display: inline-block;
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0
+}
+
+.cell-input input {
+    border: 0;
+    padding: 0;
+    vertical-align: middle
+}
+
+.cell-item-gameIdArry {
+    height: auto
+}
+
+.cell-input#gameIdArry {
+    padding: 0.05rem 0.3333333333rem 0.3rem
+}
+
+.cell-input#gameIdArry div {
+    display: inline-block;
+    position: relative;
+    width: 1.76rem
+}
+
+.cell-input#gameIdArry div.normal input[type="button"] {
+    width: 1.7066666667rem;
+    height: 0.64rem;
+    font-size: 0.32rem;
+    font-family: 'PingFang-SC-Medium';
+    margin-top: 0.2666666667rem;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 0.0666666667rem
+}
+
+.cell-input#gameIdArry div.active input[type="button"] {
+    color: #fff;
+    border: none;
+    background-color: #ff9119
+}
+
+.cell-input#gameIdArry div img {
+    display: none;
+    width: 0.32rem;
+    height: 0.32rem;
+    position: absolute;
+    color: #fff;
+    right: -.0533333333rem;
+    bottom: -.0533333333rem;
+    border-radius: 50%
+}
+
+.cell-input#gameIdArry div:not(:nth-child(3n+1)) {
+    margin-left: 0.5333333333rem
+}
+
+.cell-input span {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    font-size: 0.3733333333rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    margin-left: -.32rem;
+    box-sizing: border-box
+}
+
+.cell-item .no-border {
+    border: none
+}
+
+.icon-right {
+    position: absolute;
+    right: 0.32rem;
+    font-size: 0.4rem;
+    margin-top: 0.4rem;
+    color: rgb(44, 44, 44)
+}
+
+input:disabled {
+    background-color: transparent
+}
+
+input#sellStartTime {
+    float: left
+}
+
+input#sellEndTime {
+    float: right;
+    padding-left: 0
+}
+
+input#sellEndTime,
+input#sellStartTime {
+    display: inline-block;
+    width: 40%
+}
+
+input#commit {
+    width: 8.9333333333rem;
+    height: 1.2rem;
+    margin: 1.8666666667rem 0.5333333333rem 1.4666666667rem;
+    text-align: center;
+    border: 0;
+    border-radius: 0.6rem;
+    color: #fff;
+    font-size: 0.4266666667rem;
+    background-image: linear-gradient(0, rgb(255, 126, 0) 0%, rgb(255, 126, 0) 100%)
+}
+
+.station-type {
+    width: 1.3333333333rem;
+    height: 0.5333333333rem;
+    margin-top: 0.4rem;
+    color: #fff;
+    font-size: 0.3466666667rem;
+    background-color: rgb(243, 39, 41);
+    background-image: none;
+    border-radius: 0.1333333333rem
+}
+
+ul.rv-apprPicture {
+    float: left;
+    margin: 0.5333333333rem 0.6rem 0.2666666667rem
+}
+
+.rv-apprPicture li {
+    float: left;
+    width: 4rem;
+    height: 3.64rem
+}
+
+.rv-apprPicture li label {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.rv-apprPicture li label,
+.rv-apprPicture li label img {
+    width: 4rem;
+    height: 2.6666666667rem
+}
+
+.rv-apprPicture li:nth-child(2n+2) {
+    margin-left: 0.8rem
+}
+
+.rv-apprPicture li:last-child {
+    background: none
+}
+
+.rv-apprPicture li:last-child p:first-child {
+    color: rgb(243, 39, 41)
+}
+
+.rv-apprPicture li:last-child p {
+    text-align: left;
+    font-size: 0.2933333333rem
+}
+
+.rv-apprPicture li:first-child,
+.rv-apprPicture li:nth-child(2) {
+    margin-top: 0
+}
+
+.rv-apprPicture div {
+    width: 4rem;
+    height: 2.6666666667rem
+}
+
+.rv-apprPicture p {
+    width: 100%;
+    padding-top: 0.24rem;
+    text-align: center;
+    color: rgb(165, 165, 165);
+    font-size: 0.3333333333rem
+}
+
+.rv-apprPicture p>code {
+    color: red
+}
+
+label[for="ownerFileIdcardZ"] {
+    background-image: url("../img/relevantInfo/ownerFileIdcardZ.png");
+    background-size: 100%
+}
+
+label[for="ownerFileIdcardF"] {
+    background-image: url("../img/relevantInfo/ownerFileIdcardF.png");
+    background-size: 100%
+}
+
+label[for="fileIdcardZ"] {
+    background-image: url("../img/relevantInfo/fileIdcardZ.png");
+    background-size: 100%
+}
+
+label[for="fileIdcardF"] {
+    background-image: url("../img/relevantInfo/ownerFileIdcardF.png");
+    background-size: 100%
+}
+
+label[for="fileIdcardS"] {
+    background-image: url("../img/relevantInfo/fileIdcardS.png");
+    background-size: 100%
+}
+
+label[for="fileSell"] {
+    background-image: url("../img/relevantInfo/fileSell.png");
+    background-size: 100%
+}
+
+label[for="fileSellS"] {
+    background-image: url("../img/relevantInfo/fileSellS.png");
+    background-size: 100%
+}
+
+label[for="fileDoor"] {
+    background-image: url("../img/relevantInfo/fileDoor.png");
+    background-size: 100%
+}
+
+label[for="protocolFile"] {
+    background-image: url("../img/relevantInfo/protocolFile.png");
+    background-size: 100%
+}
